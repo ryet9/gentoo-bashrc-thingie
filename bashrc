@@ -14,7 +14,7 @@ fanspeed_MAX="100"
 pumpspeed_MIN="40"
 pumpspeed_MAX="100"
 
-#	Spin fans UP to fanspeed_MAX @ setup phase of emerge
+#	Spin fans UP to fanspeed_MAX & pumpspeed_MAX @ setup phase of emerge
 if [ "${EBUILD_PHASE}" == "setup" ]
 then
 	liquidctl --match hydro set fan speed $fanspeed_MAX
@@ -22,7 +22,7 @@ then
 	echo "Spinning up FANS 🌬️💨🌫 🥶"
 fi
 
-#	Spin fans DOWN to fanspeed_MIN @ end of emerge phase
+#	Spin fans DOWN to fanspeed_MIN & pumpspeed_MIN @ end of emerge phase
 if [ "${EBUILD_PHASE}" == "postinst" ]
 then
 	liquidctl --match hydro set fan speed $fanspeed_MIN
