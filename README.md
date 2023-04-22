@@ -1,4 +1,4 @@
 # gentoo-bashrc-thingie
-Speeds up Corsair Hydro cooler while emerging ..then shuts those fuckers up once done
+Speeds up Corsair Hydro cooler while emerging ..then shuts that fucker up once done
 
 I like 🐢🐢🐢
