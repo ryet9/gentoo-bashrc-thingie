@@ -41,3 +41,33 @@ then
 	liquidctl --match Asetek set fan speed $fanspeed_MIN
 	liquidctl --match Asetek set pump speed $pumpspeed_MIN
 fi
+
+
+
+#	more  FUNctions
+
+#register_success_hook mySuccessHook
+#function mySuccessHook {
+#    echo "success! 👍️"
+#}
+
+#register_die_hook myDieHook
+#function myDieHook {
+#    echo "failure! 👎️"
+#}
+
+#post_pkg_postinst() {
+#  if [ "${CATEGORY}/${PN}" = "app-editors/nano" ]; then
+#    # do what ever you want
+#    echo postinst hook for nanos
+#  fi
+#}
+
+#post_pkg_postinst () {
+#	umount -v /var/cache/distfiles
+#	umount -v /var/tmp/portage
+#	mount -v /var/cache/distfiles
+#	mount -v /var/tmp/portage
+#	liquidctl --match Asetek set fan speed 40
+#	echo post merge script ran
+#} 
